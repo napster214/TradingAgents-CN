@@ -2,11 +2,10 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Version](https://img.shields.io/badge/Version-cn--0.1.13--preview-orange.svg)](./VERSION)
+[![Version](https://img.shields.io/badge/Version-cn--0.1.15-green.svg)](./VERSION)
 [![Documentation](https://img.shields.io/badge/docs-中文文档-green.svg)](./docs/)
 [![Original](https://img.shields.io/badge/基于-TauricResearch/TradingAgents-orange.svg)](https://github.com/TauricResearch/TradingAgents)
 
-> 🚀 **最新版本 cn-0.1.13-preview**: 原生OpenAI支持与Google AI全面集成预览版！新增自定义OpenAI端点、9个Google AI模型、LLM适配器架构优化！
 >
 > 🎯 **核心功能**: 原生OpenAI支持 | Google AI全面集成 | 自定义端点配置 | 智能模型选择 | 多LLM提供商支持 | 模型选择持久化 | Docker容器化部署 | 专业报告导出 | 完整A股支持 | 中文本地化
 
@@ -17,6 +16,153 @@
 感谢 [Tauric Research](https://github.com/TauricResearch) 团队创造的革命性多智能体交易框架 [TradingAgents](https://github.com/TauricResearch/TradingAgents)！
 
 **🎯 我们的使命**: 为中国用户提供完整的中文化体验，支持A股/港股市场，集成国产大模型，推动AI金融技术在中文社区的普及应用。
+
+## 🎉 v1.0.0-preview 内测版本 - 全新架构升级
+
+> 🚀 **重磅发布**: v1.0.0-preview 版本现已开启内测！全新的 FastAPI + Vue 3 架构，带来企业级的性能和体验！
+
+### ✨ 核心特性
+
+#### 🏗️ **全新技术架构**
+- **后端升级**: 从 Streamlit 迁移到 FastAPI，提供更强大的 RESTful API
+- **前端重构**: 采用 Vue 3 + Element Plus，打造现代化的单页应用
+- **数据库优化**: MongoDB + Redis 双数据库架构，性能提升 10 倍
+- **容器化部署**: 完整的 Docker 多架构支持（amd64 + arm64）
+
+#### 🎯 **企业级功能**
+- **用户权限管理**: 完整的用户认证、角色管理、操作日志系统
+- **配置管理中心**: 可视化的大模型配置、数据源管理、系统设置
+- **缓存管理系统**: 智能缓存策略，支持 MongoDB/Redis/文件多级缓存
+- **实时通知系统**: SSE 推送，实时跟踪分析进度和系统状态
+
+#### 🤖 **智能分析增强**
+- **动态供应商管理**: 支持动态添加和配置 LLM 供应商
+- **模型能力管理**: 智能模型选择，根据任务自动匹配最佳模型
+- **多数据源同步**: 统一的数据源管理，支持 Tushare、AkShare、BaoStock
+- **报告导出功能**: 支持 Markdown/Word/PDF 多格式专业报告导出
+
+#### 🐳 **Docker 多架构支持**
+- **跨平台部署**: 支持 x86_64 和 ARM64 架构（Apple Silicon、树莓派、AWS Graviton）
+- **GitHub Actions**: 自动化构建和发布 Docker 镜像
+- **一键部署**: 完整的 Docker Compose 配置，5 分钟快速启动
+
+### 📊 技术栈升级
+
+| 组件 | v0.1.x | v1.0.0-preview |
+|------|--------|----------------|
+| **后端框架** | Streamlit | FastAPI + Uvicorn |
+| **前端框架** | Streamlit | Vue 3 + Vite + Element Plus |
+| **数据库** | 可选 MongoDB | MongoDB + Redis |
+| **API 架构** | 单体应用 | RESTful API + WebSocket |
+| **部署方式** | 本地/Docker | Docker 多架构 + GitHub Actions |
+
+### 🎯 内测申请
+
+v1.0.0-preview 版本目前处于**内测阶段**，我们诚邀您参与体验和测试！
+
+####  使用指南
+
+在申请试用前，建议先阅读详细的使用指南：
+
+**[📘 TradingAgents-CN v1.0.0-preview 使用指南](https://mp.weixin.qq.com/s/ppsYiBncynxlsfKFG8uEbw)**
+
+使用指南包含：
+- ✅ 完整的功能介绍和操作演示
+- ✅ 详细的配置说明和最佳实践
+- ✅ 常见问题解答和故障排除
+- ✅ 实际使用案例和效果展示
+
+#### 如何申请试用
+
+1. **关注公众号**: 微信搜索 **"TradingAgents-CN"** 并关注
+2. **提交申请**: 通过公众号私信发送以下信息：
+   - 您的姓名/昵称
+   - 使用场景（个人学习/企业应用/学术研究）
+   - 技术背景（可选）
+   - 期望的功能或建议（可选）
+3. **获取权限**: 我们会在 1-2 个工作日内回复，并提供：
+   - 内测版本访问地址
+   - 详细的使用文档
+   - 技术支持和交流群
+
+#### 🎁 内测用户福利
+
+- ✅ **优先体验**: 第一时间体验最新功能
+- ✅ **技术支持**: 专属技术支持和问题解答
+- ✅ **功能定制**: 您的需求将优先纳入开发计划
+- ✅ **社区荣誉**: 内测贡献者将在项目中特别致谢
+
+#### 📱 联系方式
+
+- **微信公众号**: TradingAgents-CN（推荐）
+
+  <img src="assets/weixin.png" alt="微信公众号" width="200"/>
+
+---
+
+## 🆕 v0.1.15 重大更新
+
+### 🤖 LLM生态系统大升级
+
+- **千帆大模型支持**: 新增百度千帆(ERNIE)大模型完整集成
+- **LLM适配器重构**: 统一的OpenAI兼容适配器架构
+- **多厂商支持**: 支持更多国产大模型提供商
+- **集成指南**: 完整的LLM集成开发文档和测试工具
+
+### 📚 学术研究支持
+
+- **TradingAgents论文**: 完整的中文翻译版本和深度解读
+- **技术博客**: 详细的技术分析和实现原理解读
+- **学术资料**: PDF论文和相关研究资料
+- **引用支持**: 标准的学术引用格式和参考文献
+
+### 🛠️ 开发者体验升级
+
+- **开发工作流**: 标准化的开发流程和分支管理规范
+- **安装验证**: 完整的安装测试和验证脚本
+- **文档重构**: 结构化的文档系统和快速开始指南
+- **PR模板**: 标准化的Pull Request模板和代码审查流程
+
+### 🔧 企业级工具链
+
+- **分支保护**: GitHub分支保护策略和安全规则
+- **紧急程序**: 完整的紧急处理和故障恢复程序
+- **测试框架**: 增强的测试覆盖和验证工具
+- **部署指南**: 企业级部署和配置管理
+
+## 📋 v0.1.14 功能回顾
+
+### 👥 用户权限管理系统
+
+- **完整用户管理**: 新增用户注册、登录、权限控制功能
+- **角色权限**: 支持多级用户角色和权限管理
+- **会话管理**: 安全的用户会话和状态管理
+- **用户活动日志**: 完整的用户操作记录和审计功能
+
+### 🔐 Web用户认证系统
+
+- **登录组件**: 现代化的用户登录界面
+- **认证管理器**: 统一的用户认证和授权管理
+- **安全增强**: 密码加密、会话安全等安全机制
+- **用户仪表板**: 个性化的用户活动仪表板
+
+### 🗄️ 数据管理优化
+
+- **MongoDB集成增强**: 改进的MongoDB连接和数据管理
+- **数据目录重组**: 优化的数据存储结构和管理
+- **数据迁移脚本**: 完整的数据迁移和备份工具
+- **缓存优化**: 提升数据加载和分析结果缓存性能
+
+### 🧪 测试覆盖增强
+
+- **功能测试脚本**: 新增6个专项功能测试脚本
+- **工具处理器测试**: Google工具处理器修复验证
+- **引导自动隐藏测试**: UI交互功能测试
+- **在线工具配置测试**: 工具配置和选择逻辑测试
+- **真实场景测试**: 实际使用场景的端到端测试
+- **美股独立性测试**: 美股分析功能独立性验证
+
+---
 
 ## 🆕 v0.1.13 重大更新
 
@@ -302,8 +448,15 @@ chmod +x scripts/smart_start.sh && ./scripts/smart_start.sh
 # 1. 升级pip (重要！避免安装错误)
 python -m pip install --upgrade pip
 
-# 2. 安装依赖
-pip install -e .
+# 2. 安装依赖（推荐使用锁定版本，安装速度最快）
+pip install -r requirements-lock.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -e . --no-deps
+
+# 或一步安装（会重新解析依赖，速度较慢）
+# pip install -e . -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 💡 国内用户推荐使用镜像加速（详见 docs/installation-mirror.md）
+# ⚠️ Windows 用户如遇到 PyYAML 编译错误，使用锁定版本可避免此问题
 
 # 3. 启动应用
 python start_web.py
@@ -320,6 +473,75 @@ python start_web.py
 5. **查看报告**: 点击"📊 查看分析报告"按钮
 6. **导出报告**: 支持Word/PDF/Markdown格式
 
+## 🔐 用户权限管理
+
+### 🔑 默认账号信息
+
+系统提供以下默认账号，首次启动时自动创建：
+
+| 用户名 | 密码 | 角色 | 权限说明 |
+|--------|------|------|----------|
+| **admin** | **admin123** | 管理员 | 完整系统权限，用户管理，系统配置 |
+| **user** | **user123** | 普通用户 | 股票分析，报告查看，基础功能 |
+
+> ⚠️ **安全提醒**: 首次登录后请立即修改默认密码！
+
+### 🛡️ 权限控制体系
+
+- **🔐 登录认证**: 基于用户名密码的安全认证
+- **👥 角色管理**: 管理员、普通用户等多级权限
+- **⏰ 会话管理**: 自动超时保护，安全登出
+- **📊 操作日志**: 完整的用户活动记录
+
+### 🛠️ 用户管理工具
+
+系统提供完整的命令行用户管理工具：
+
+#### Windows 用户
+```powershell
+# 使用 PowerShell 脚本
+.\scripts\user_manager.ps1 list                    # 列出所有用户
+.\scripts\user_manager.ps1 change-password admin   # 修改密码
+.\scripts\user_manager.ps1 create newuser trader  # 创建新用户
+.\scripts\user_manager.ps1 delete olduser         # 删除用户
+
+# 或使用批处理文件
+.\scripts\user_manager.bat list
+```
+
+#### Python 脚本（跨平台）
+```bash
+# 直接使用 Python 脚本
+python scripts/user_password_manager.py list
+python scripts/user_password_manager.py change-password admin
+python scripts/user_password_manager.py create newuser --role trader
+python scripts/user_password_manager.py delete olduser
+python scripts/user_password_manager.py reset  # 重置为默认配置
+```
+
+### 📋 支持的用户操作
+
+- **📝 列出用户**: 查看所有用户及其角色权限
+- **🔑 修改密码**: 安全的密码更新机制
+- **👤 创建用户**: 支持自定义角色和权限
+- **🗑️ 删除用户**: 安全的用户删除功能
+- **🔄 重置配置**: 恢复默认用户设置
+
+### 📁 配置文件位置
+
+用户配置存储在：`web/config/users.json`
+
+> 📚 **详细文档**: 完整的用户管理指南请参考 [scripts/USER_MANAGEMENT.md](scripts/USER_MANAGEMENT.md)
+
+### 🚧 当前版本限制
+
+- ❌ 暂不支持在线用户注册
+- ❌ 暂不支持Web界面的角色管理
+- ✅ 支持完整的命令行用户管理
+- ✅ 支持完整的权限控制框架
+
+---
+
 ## 🎯 核心优势
 
 - **🧠 智能新闻分析**: v0.1.12新增AI驱动的新闻过滤和质量评估系统
@@ -330,6 +552,7 @@ python start_web.py
 - **🎯 快速切换**: 5个热门模型快速按钮，一键切换不同AI
 - **🆕 实时进度**: v0.1.10异步进度跟踪，告别黑盒等待
 - **💾 智能会话**: 状态持久化，页面刷新不丢失分析结果
+- **🔐 用户权限**: v0.1.14新增完整的用户认证和权限管理体系
 - **🇨🇳 中国优化**: A股/港股数据 + 国产LLM + 中文界面
 - **🐳 容器化**: Docker一键部署，环境隔离，快速扩展
 - **📄 专业报告**: 多格式导出，自动生成投资建议
@@ -389,9 +612,10 @@ source env/bin/activate
 python -m pip install --upgrade pip
 
 # 4. 安装所有依赖
-pip install -r requirements.txt
-#或者使用pip install -e .
 pip install -e .
+
+# 💡 国内用户推荐使用镜像加速（详见 docs/installation-mirror.md）
+# pip install -e . -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 注意：requirements.txt已包含所有必需依赖：
 # - 数据库支持 (MongoDB + Redis)
@@ -788,6 +1012,9 @@ source env/bin/activate
 
 # 2. 安装项目到虚拟环境（重要！）
 pip install -e .
+
+# 💡 国内用户推荐使用镜像加速（详见 docs/installation-mirror.md）
+# pip install -e . -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 3. 启动Web管理界面
 # 方法1：使用项目启动脚本（推荐）
@@ -1300,7 +1527,11 @@ cost_optimized_config = {
 
 - **GitHub Issues**: [提交问题和建议](https://github.com/hsliuping/TradingAgents-CN/issues)
 - **邮箱**: hsliup@163.com
-- 项目ＱＱ群：782124367
+- 项目ＱＱ群：187537480
+- 项目微信公众号：TradingAgents-CN
+
+  <img src="assets/weixin.png" alt="微信公众号" width="200"/>
+
 - **原项目**: [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
 - **文档**: [完整文档目录](docs/)
 
